@@ -145,7 +145,7 @@ subjects:
 `````
 
 To apply the configs to multiple environments, such as staging and production, we can create separate Kubernetes namespaces for each environment, and deploy the same YAML files to each namespace. This allows us to isolate the resources and configurations for each environment and prevents any interference between them.
-Here is an example YAML file for creating an HPA that scales based on CPU utilization:
+
 
 
 To auto-scale the deployment based on network latency instead of CPU, we can use the Kubernetes HorizontalPodAutoscaler with the target average network latency as the metric. We can use a Kubernetes Custom Metric Adapter to expose the network latency as a custom metric, and then configure the HPA to use the custom metric as the target metric. This requires setting up the custom metric adapter separately and configuring it to scrape the necessary network latency data.
